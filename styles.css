@@ -116,8 +116,8 @@ body {
   top: 0;
   height: 100%;
   background:
-    linear-gradient(130deg, rgba(253, 248, 247, 0.92) 0%, rgba(39, 120, 219, 0.12) 45%, rgba(253, 248, 247, 0.94) 100%),
-    linear-gradient(180deg, rgba(23, 52, 70, 0.22), rgba(23, 52, 70, 0.08) 40%, rgba(23, 52, 70, 0));
+    linear-gradient(130deg, rgba(253, 248, 247, 0.94) 0%, rgba(39, 120, 219, 0.16) 45%, rgba(253, 248, 247, 0.96) 100%),
+    linear-gradient(180deg, rgba(23, 52, 70, 0.32), rgba(23, 52, 70, 0.12) 40%, rgba(23, 52, 70, 0));
   z-index: 1;
 }
 
