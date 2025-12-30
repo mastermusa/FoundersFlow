@@ -295,21 +295,31 @@ body {
 /* Navbar styles */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(94vw, 1100px);
   z-index: 50;
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(14px);
+  background-color: rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(18px);
   transition: all 0.3s ease;
+  box-shadow: none;
+  border-bottom: none;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.12);
   box-shadow: none;
   border-bottom: none;
 }
 
-.navbar-scrolled {
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: none;
-  border-bottom: none;
+.nav-inner {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.65rem 1.5rem;
 }
 
 .nav-menu {
