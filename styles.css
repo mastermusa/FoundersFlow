@@ -3,6 +3,7 @@
   --brand-dark: #173446;
   --brand-white: #fdf8f7;
   --brand-blue-light: #4a91e8;
+  --nav-height: 72px;
 }
 
 * {
@@ -22,6 +23,12 @@ body {
 @media (min-width: 768px) {
   .section-padding {
     padding: 6.5rem 0;
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    --nav-height: 80px;
   }
 }
 
@@ -78,7 +85,10 @@ body {
 
 .hero-video {
   position: absolute;
-  inset: 0;
+  left: 0;
+  right: 0;
+  top: calc(var(--nav-height) * -1);
+  height: calc(100% + var(--nav-height));
   overflow: hidden;
   z-index: 0;
 }
@@ -93,7 +103,10 @@ body {
 
 .hero-overlay {
   position: absolute;
-  inset: 0;
+  left: 0;
+  right: 0;
+  top: calc(var(--nav-height) * -1);
+  height: calc(100% + var(--nav-height));
   background: linear-gradient(120deg, rgba(253, 248, 247, 0.82), rgba(253, 248, 247, 0.65));
   z-index: 1;
 }
@@ -286,11 +299,11 @@ body {
   left: 0;
   right: 0;
   z-index: 50;
-  background-color: rgba(23, 52, 70, 0.08);
+  background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(14px);
   transition: all 0.3s ease;
   box-shadow: 0 1px 2px rgba(23, 52, 70, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .navbar-scrolled {
