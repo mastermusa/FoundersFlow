@@ -8,6 +8,14 @@
       name="description"
       content="FoundersFlow helps founders, CEOs, and senior leaders build a credible personal brand on LinkedIn and Substack, without spending hours writing."
     />
+    <meta property="og:title" content="FoundersFlow - Premium LinkedIn + Substack Ghostwriting" />
+    <meta property="og:description" content="Your voice. Our process. Seamless flow. Build a credible personal brand without spending hours writing." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://foundersflow.co.uk/assets/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FoundersFlow - Premium LinkedIn + Substack Ghostwriting" />
+    <meta name="twitter:description" content="Your voice. Our process. Seamless flow." />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,6 +45,32 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-brand-white text-brand-dark antialiased">
+    <nav id="navbar" class="navbar">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#hero" class="flex items-center gap-3 transition-opacity hover:opacity-80">
+          <img src="assets/logo.png" alt="FoundersFlow" class="h-10 w-auto" />
+          <span class="hidden text-lg font-semibold text-brand-dark sm:inline">FoundersFlow</span>
+        </a>
+
+        <button id="mobile-menu-btn" class="hamburger md:hidden" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div id="nav-menu" class="nav-menu">
+          <a href="#what-we-do" class="nav-link">What We Do</a>
+          <a href="#our-approach" class="nav-link">Approach</a>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+          <a href="#packages" class="nav-link">Packages</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#contact" class="btn-primary inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </nav>
+
     <main>
       <section
         id="hero"
@@ -71,14 +105,37 @@
               </div>
               <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
                 <a
-                  href="mailto:hello@foundersflow.co.uk"
-                  class="btn-primary inline-flex items-center justify-center px-6 py-3 text-sm font-semibold"
+                  href="#contact"
+                  class="btn-primary inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold"
                 >
                   Get Started
+                  <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
                 </a>
                 <span class="text-sm text-brand-dark/60">
                   Trusted by founders building consistent visibility.
                 </span>
+              </div>
+              <div class="mt-8 flex flex-wrap items-center gap-6">
+                <div class="flex items-center gap-2">
+                  <svg class="h-5 w-5 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm text-brand-dark/70">No contracts</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="h-5 w-5 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm text-brand-dark/70">Cancel anytime</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="h-5 w-5 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm text-brand-dark/70">100% Human-reviewed</span>
+                </div>
               </div>
             </div>
             <div class="reveal rounded-3xl border border-brand-dark/10 bg-white/80 p-8 shadow-soft backdrop-blur">
@@ -210,46 +267,135 @@
           <div class="mt-12 grid gap-6 lg:grid-cols-3">
             <div class="reveal pricing-card">
               <h3 class="text-xl font-semibold text-brand-dark">Starter</h3>
-              <ul class="mt-6 space-y-3 text-sm text-brand-dark/75">
-                <li>Up to 8 LinkedIn posts per month</li>
-                <li>Written in the client’s voice</li>
-                <li>Human-edited, AI-optimised</li>
-                <li>Weekly delivery</li>
-                <li>No scheduling</li>
+              <div class="mt-4 mb-6">
+                <span class="text-4xl font-bold text-brand-dark">£599</span>
+                <span class="text-sm text-brand-dark/60">/month</span>
+              </div>
+              <ul class="space-y-3 text-sm text-brand-dark/75">
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Up to 8 LinkedIn posts per month
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Written in your voice
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Human-edited, AI-optimised
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Weekly delivery
+                </li>
               </ul>
               <p class="mt-6 text-sm text-brand-dark/60">
                 Best for founders starting to build consistency.
               </p>
+              <a href="#contact" class="mt-6 block w-full rounded-full border-2 border-brand-blue py-2.5 text-center text-sm font-semibold text-brand-blue transition-all hover:bg-brand-blue hover:text-white">
+                Get Started
+              </a>
             </div>
-            <div class="reveal pricing-card border-brand-blue/40" data-reveal-delay="120">
+            <div class="reveal pricing-card pricing-card-featured border-brand-blue/40" data-reveal-delay="120">
               <div class="flex items-center justify-between">
                 <h3 class="text-xl font-semibold text-brand-dark">Growth</h3>
                 <span class="badge">Popular</span>
               </div>
-              <ul class="mt-6 space-y-3 text-sm text-brand-dark/75">
-                <li>Up to 12 LinkedIn posts per month</li>
-                <li>Weekly input via voice notes or messages</li>
-                <li>Human-crafted, AI-optimised</li>
-                <li>Scheduled weekly</li>
-                <li>Strategy support</li>
+              <div class="mt-4 mb-6">
+                <span class="text-4xl font-bold text-brand-dark">£999</span>
+                <span class="text-sm text-brand-dark/60">/month</span>
+              </div>
+              <ul class="space-y-3 text-sm text-brand-dark/75">
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Up to 12 LinkedIn posts per month
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Weekly input via voice notes
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Human-crafted, AI-optimised
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Scheduled weekly
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Strategy support
+                </li>
               </ul>
               <p class="mt-6 text-sm text-brand-dark/60">
                 Best for founders growing visibility and authority.
               </p>
+              <a href="#contact" class="mt-6 block w-full rounded-full bg-gradient-to-r from-brand-blue to-brand-light py-2.5 text-center text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl">
+                Get Started
+              </a>
             </div>
             <div class="reveal pricing-card" data-reveal-delay="220">
               <h3 class="text-xl font-semibold text-brand-dark">Authority</h3>
-              <ul class="mt-6 space-y-3 text-sm text-brand-dark/75">
-                <li>Up to 16 LinkedIn posts per month</li>
-                <li>Strategy support</li>
-                <li>Human-edited, AI-optimised</li>
-                <li>Weekly delivery</li>
-                <li>Scheduled posts</li>
-                <li>3 Substack long-form articles included</li>
+              <div class="mt-4 mb-6">
+                <span class="text-4xl font-bold text-brand-dark">£1,499</span>
+                <span class="text-sm text-brand-dark/60">/month</span>
+              </div>
+              <ul class="space-y-3 text-sm text-brand-dark/75">
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Up to 16 LinkedIn posts per month
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Priority strategy support
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Human-edited, AI-optimised
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  Scheduled posts
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  3 Substack articles included
+                </li>
               </ul>
               <p class="mt-6 text-sm text-brand-dark/60">
                 Best for founders and CEOs with high visibility goals.
               </p>
+              <a href="#contact" class="mt-6 block w-full rounded-full border-2 border-brand-blue py-2.5 text-center text-sm font-semibold text-brand-blue transition-all hover:bg-brand-blue hover:text-white">
+                Get Started
+              </a>
             </div>
           </div>
 
@@ -265,15 +411,209 @@
         </div>
       </section>
 
-      <!--
-      Testimonials placeholder
       <section id="testimonials" class="section-padding">
-        <div class="mx-auto max-w-5xl px-6 text-center">
-          <h2 class="text-3xl font-semibold text-brand-dark">Client Notes</h2>
-          <p class="mt-4 text-sm text-brand-dark/70">Short testimonial quote placeholder.</p>
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="reveal space-y-4 text-center">
+            <p class="text-xs font-semibold uppercase tracking-[0.4em] text-brand-blue/70">Testimonials</p>
+            <h2 class="text-3xl font-semibold text-brand-dark md:text-4xl">Trusted by Founders</h2>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="reveal rounded-2xl border border-brand-dark/10 bg-white p-6 shadow-sm">
+              <div class="mb-4 flex gap-1">
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <p class="text-sm leading-relaxed text-brand-dark/80">
+                "FoundersFlow completely transformed how I show up on LinkedIn. The content feels like me, but better articulated. It's given me my time back."
+              </p>
+              <div class="mt-4 flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full bg-brand-blue/20"></div>
+                <div>
+                  <p class="text-sm font-semibold text-brand-dark">Sarah Chen</p>
+                  <p class="text-xs text-brand-dark/60">Founder, TechFlow</p>
+                </div>
+              </div>
+            </div>
+            <div class="reveal rounded-2xl border border-brand-dark/10 bg-white p-6 shadow-sm" data-reveal-delay="120">
+              <div class="mb-4 flex gap-1">
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <p class="text-sm leading-relaxed text-brand-dark/80">
+                "The quality of writing is exceptional. My engagement has tripled, and people are reaching out about opportunities I wouldn't have had before."
+              </p>
+              <div class="mt-4 flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full bg-brand-blue/20"></div>
+                <div>
+                  <p class="text-sm font-semibold text-brand-dark">Marcus Rodriguez</p>
+                  <p class="text-xs text-brand-dark/60">CEO, GrowthLabs</p>
+                </div>
+              </div>
+            </div>
+            <div class="reveal rounded-2xl border border-brand-dark/10 bg-white p-6 shadow-sm" data-reveal-delay="220">
+              <div class="mb-4 flex gap-1">
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <p class="text-sm leading-relaxed text-brand-dark/80">
+                "Finally, a service that actually captures my voice. I don't have to agonize over every word anymore. It just flows."
+              </p>
+              <div class="mt-4 flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full bg-brand-blue/20"></div>
+                <div>
+                  <p class="text-sm font-semibold text-brand-dark">Emma Thompson</p>
+                  <p class="text-xs text-brand-dark/60">Founder, CreativeMinds</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      -->
+
+      <section id="faq" class="section-padding bg-white">
+        <div class="mx-auto max-w-3xl px-6">
+          <div class="reveal space-y-4 text-center">
+            <p class="text-xs font-semibold uppercase tracking-[0.4em] text-brand-blue/70">FAQ</p>
+            <h2 class="text-3xl font-semibold text-brand-dark md:text-4xl">Common Questions</h2>
+          </div>
+          <div class="mt-12 space-y-4">
+            <div class="reveal faq-item rounded-2xl border border-brand-dark/10 bg-brand-white">
+              <button class="faq-question w-full px-6 py-5 text-left">
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-base font-semibold text-brand-dark">How does the process work?</span>
+                  <svg class="faq-icon h-5 w-5 flex-shrink-0 text-brand-blue transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="faq-answer">
+                <div class="px-6 pb-5 text-sm leading-relaxed text-brand-dark/75">
+                  We start with an onboarding call to understand your goals, voice, and positioning. Then you share thoughts via voice notes, messages, or quick prompts. We turn those into polished LinkedIn posts and Substack drafts delivered weekly.
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal faq-item rounded-2xl border border-brand-dark/10 bg-brand-white" data-reveal-delay="80">
+              <button class="faq-question w-full px-6 py-5 text-left">
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-base font-semibold text-brand-dark">Will it actually sound like me?</span>
+                  <svg class="faq-icon h-5 w-5 flex-shrink-0 text-brand-blue transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="faq-answer">
+                <div class="px-6 pb-5 text-sm leading-relaxed text-brand-dark/75">
+                  Yes. We capture your language patterns, cadence, and perspective through our voice mapping process. Every piece is human-reviewed to ensure it matches your tone. If something feels off, we refine until it feels right.
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal faq-item rounded-2xl border border-brand-dark/10 bg-brand-white" data-reveal-delay="160">
+              <button class="faq-question w-full px-6 py-5 text-left">
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-base font-semibold text-brand-dark">How much time do I need to invest?</span>
+                  <svg class="faq-icon h-5 w-5 flex-shrink-0 text-brand-blue transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="faq-answer">
+                <div class="px-6 pb-5 text-sm leading-relaxed text-brand-dark/75">
+                  Minimal. After onboarding, most clients spend 15-30 minutes per week sharing quick thoughts or voice notes. We handle the rest—turning those inputs into ready-to-post content.
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal faq-item rounded-2xl border border-brand-dark/10 bg-brand-white" data-reveal-delay="240">
+              <button class="faq-question w-full px-6 py-5 text-left">
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-base font-semibold text-brand-dark">Do you handle scheduling and posting?</span>
+                  <svg class="faq-icon h-5 w-5 flex-shrink-0 text-brand-blue transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="faq-answer">
+                <div class="px-6 pb-5 text-sm leading-relaxed text-brand-dark/75">
+                  On the Growth and Authority packages, yes. We schedule your LinkedIn posts to publish on the days and times you prefer. For Starter, we deliver the content and you handle posting.
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal faq-item rounded-2xl border border-brand-dark/10 bg-brand-white" data-reveal-delay="320">
+              <button class="faq-question w-full px-6 py-5 text-left">
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-base font-semibold text-brand-dark">Can I cancel anytime?</span>
+                  <svg class="faq-icon h-5 w-5 flex-shrink-0 text-brand-blue transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="faq-answer">
+                <div class="px-6 pb-5 text-sm leading-relaxed text-brand-dark/75">
+                  Yes. There are no long-term contracts. You can cancel with 30 days' notice if FoundersFlow isn't the right fit.
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal faq-item rounded-2xl border border-brand-dark/10 bg-brand-white" data-reveal-delay="400">
+              <button class="faq-question w-full px-6 py-5 text-left">
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-base font-semibold text-brand-dark">What if I already have content ideas?</span>
+                  <svg class="faq-icon h-5 w-5 flex-shrink-0 text-brand-blue transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+              <div class="faq-answer">
+                <div class="px-6 pb-5 text-sm leading-relaxed text-brand-dark/75">
+                  Perfect. We can work with your ideas, rough drafts, or voice notes and turn them into polished, publishable content. You stay in control of the topics and direction.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="contact" class="section-padding">
         <div class="mx-auto max-w-5xl px-6">
@@ -350,15 +690,65 @@
     </main>
 
     <footer class="border-t border-brand-dark/10 bg-white">
-      <div class="mx-auto flex max-w-6xl flex-col items-center gap-2 px-6 py-6 text-sm text-brand-dark/60 md:flex-row md:justify-between">
-        <span>Copyright FoundersFlow © 2025</span>
-        <a href="mailto:hello@foundersflow.co.uk" class="text-brand-dark/70 hover:text-brand-blue">
-          hello@foundersflow.co.uk
-        </a>
+      <div class="mx-auto max-w-6xl px-6 py-12">
+        <div class="grid gap-8 md:grid-cols-4">
+          <div class="md:col-span-2">
+            <div class="flex items-center gap-3">
+              <img src="assets/logo.png" alt="FoundersFlow" class="h-10 w-auto" />
+              <span class="text-lg font-semibold text-brand-dark">FoundersFlow</span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed text-brand-dark/70">
+              Premium LinkedIn and Substack ghostwriting for founders, CEOs, and senior leaders. Your voice. Our process. Seamless flow.
+            </p>
+            <div class="mt-6 flex items-center gap-4">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-brand-dark/60 transition-colors hover:text-brand-blue">
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-brand-dark/60 transition-colors hover:text-brand-blue">
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-brand-dark">Quick Links</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a href="#what-we-do" class="text-brand-dark/70 transition-colors hover:text-brand-blue">What We Do</a></li>
+              <li><a href="#our-approach" class="text-brand-dark/70 transition-colors hover:text-brand-blue">Our Approach</a></li>
+              <li><a href="#how-it-works" class="text-brand-dark/70 transition-colors hover:text-brand-blue">How It Works</a></li>
+              <li><a href="#packages" class="text-brand-dark/70 transition-colors hover:text-brand-blue">Packages</a></li>
+              <li><a href="#faq" class="text-brand-dark/70 transition-colors hover:text-brand-blue">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-brand-dark">Contact</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li>
+                <a href="mailto:hello@foundersflow.co.uk" class="text-brand-dark/70 transition-colors hover:text-brand-blue">
+                  hello@foundersflow.co.uk
+                </a>
+              </li>
+              <li class="text-brand-dark/60">London, UK</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-brand-dark/10 pt-6 text-center text-sm text-brand-dark/60">
+          <span>Copyright FoundersFlow © 2025. All rights reserved.</span>
+        </div>
       </div>
     </footer>
 
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+      </svg>
+    </button>
+
     <script>
+      // Reveal on scroll animation
       const revealElements = document.querySelectorAll(".reveal");
       const observer = new IntersectionObserver(
         (entries) => {
@@ -378,6 +768,126 @@
           element.style.transitionDelay = `${delay}ms`;
         }
         observer.observe(element);
+      });
+
+      // Navbar scroll effect
+      const navbar = document.getElementById("navbar");
+      let lastScroll = 0;
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 50) {
+          navbar.classList.add("navbar-scrolled");
+        } else {
+          navbar.classList.remove("navbar-scrolled");
+        }
+
+        lastScroll = currentScroll;
+      });
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const navMenu = document.getElementById("nav-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenuBtn.classList.toggle("hamburger-active");
+        navMenu.classList.toggle("nav-menu-active");
+      });
+
+      // Close mobile menu when clicking a link
+      const navLinks = navMenu.querySelectorAll("a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenuBtn.classList.remove("hamburger-active");
+          navMenu.classList.remove("nav-menu-active");
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!navMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+          mobileMenuBtn.classList.remove("hamburger-active");
+          navMenu.classList.remove("nav-menu-active");
+        }
+      });
+
+      // FAQ accordion
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+        const answer = item.querySelector(".faq-answer");
+        const icon = item.querySelector(".faq-icon");
+
+        question.addEventListener("click", () => {
+          const isOpen = item.classList.contains("faq-active");
+
+          // Close all other FAQs
+          faqItems.forEach((otherItem) => {
+            if (otherItem !== item) {
+              otherItem.classList.remove("faq-active");
+            }
+          });
+
+          // Toggle current FAQ
+          item.classList.toggle("faq-active");
+        });
+      });
+
+      // Scroll to top button
+      const scrollToTopBtn = document.getElementById("scroll-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollToTopBtn.classList.add("scroll-to-top-visible");
+        } else {
+          scrollToTopBtn.classList.remove("scroll-to-top-visible");
+        }
+      });
+
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+
+      // Form validation and submission feedback
+      const contactForm = document.querySelector("#contact form");
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+          const submitBtn = contactForm.querySelector('button[type="submit"]');
+          const originalText = submitBtn.textContent;
+
+          submitBtn.textContent = "Sending...";
+          submitBtn.disabled = true;
+
+          // FormSubmit will handle the actual submission
+          // The button will be re-enabled on page reload
+        });
+      }
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (href === "#") return;
+
+          e.preventDefault();
+          const target = document.querySelector(href);
+
+          if (target) {
+            const navbarHeight = navbar.offsetHeight;
+            const targetPosition = target.offsetTop - navbarHeight - 20;
+
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth"
+            });
+          }
+        });
       });
     </script>
   </body>
