@@ -665,6 +665,14 @@ button:not(.btn-primary),
     padding: 0.55rem 1.1rem;
   }
 
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
   .hero-title {
     font-size: clamp(2rem, 7vw, 2.6rem);
     line-height: 1.15;
