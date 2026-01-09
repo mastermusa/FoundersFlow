@@ -107,8 +107,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(10px) saturate(0.95);
-  transform: scale(1.08);
+  filter: blur(2px) saturate(1.08) contrast(1.08);
+  transform: scale(1.02);
 }
 
 .hero-overlay {
@@ -118,9 +118,9 @@ body {
   top: 0;
   height: 100%;
   background:
-    radial-gradient(circle at 20% 10%, rgba(39, 120, 219, 0.12), transparent 50%),
-    linear-gradient(140deg, rgba(253, 248, 247, 0.95) 0%, rgba(39, 120, 219, 0.14) 45%, rgba(253, 248, 247, 0.98) 100%),
-    linear-gradient(180deg, rgba(23, 52, 70, 0.26), rgba(23, 52, 70, 0.08) 45%, rgba(23, 52, 70, 0));
+    radial-gradient(circle at 20% 12%, rgba(39, 120, 219, 0.25), transparent 55%),
+    linear-gradient(140deg, rgba(8, 14, 20, 0.9) 0%, rgba(14, 32, 46, 0.75) 45%, rgba(8, 14, 20, 0.95) 100%),
+    linear-gradient(180deg, rgba(10, 22, 32, 0.6), rgba(10, 22, 32, 0.45) 50%, rgba(10, 22, 32, 0.25));
   z-index: 1;
 }
 
