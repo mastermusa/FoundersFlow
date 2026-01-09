@@ -366,18 +366,18 @@ body {
   transform: translateX(-50%);
   width: min(94vw, 1100px);
   z-index: 50;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #fff;
   backdrop-filter: blur(20px) saturate(1.05);
   transition: all 0.3s ease;
   box-shadow: none;
   border-bottom: none;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 16px 50px rgba(23, 52, 70, 0.12);
 }
 
 .navbar-scrolled {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #fff;
   box-shadow: none;
   border-bottom: none;
 }
@@ -386,7 +386,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  color: #fff;
+  color: var(--brand-dark);
   letter-spacing: 0.02em;
   text-transform: none;
   font-family: "Sora", "Manrope", "Helvetica Neue", Arial, sans-serif;
@@ -431,7 +431,7 @@ body {
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--brand-dark);
   transition: color 0.2s ease;
   position: relative;
 }
@@ -448,7 +448,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: var(--brand-blue);
 }
 
 .nav-link:hover::after {
@@ -456,7 +456,7 @@ body {
 }
 
 .nav-link:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid var(--brand-blue);
   outline-offset: 3px;
   border-radius: 8px;
 }
@@ -476,7 +476,7 @@ body {
 .hamburger span {
   width: 24px;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--brand-dark);
   transition: all 0.3s ease;
   border-radius: 2px;
 }
