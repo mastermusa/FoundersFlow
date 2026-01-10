@@ -396,18 +396,28 @@ body {
   transform: translateX(-50%);
   width: min(94vw, 1100px);
   z-index: 50;
-  background-color: rgba(255, 255, 255, 0.86);
-  backdrop-filter: blur(22px) saturate(1.2);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.85),
+    rgba(255, 255, 255, 0.7)
+  );
+  backdrop-filter: blur(20px) saturate(1.4);
   transition: all 0.3s ease;
   box-shadow: none;
   border-bottom: none;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 18px 50px rgba(15, 23, 42, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .navbar-scrolled {
-  background-color: rgba(255, 255, 255, 0.92);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.92),
+    rgba(255, 255, 255, 0.82)
+  );
   border-bottom: none;
   backdrop-filter: blur(18px) saturate(1.2);
   box-shadow: 0 14px 34px rgba(15, 23, 42, 0.18);
