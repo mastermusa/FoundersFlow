@@ -682,6 +682,36 @@ button:not(.btn-primary),
   align-items: center;
 }
 
+.hero-scroll {
+  position: relative;
+  width: 100%;
+  min-height: clamp(12rem, 30vh, 18rem);
+}
+
+.hero-line {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  pointer-events: none;
+}
+
+.hero-line.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.hero-scroll-title {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
 .hero-title {
   position: relative;
   color: #fff;
