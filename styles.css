@@ -415,11 +415,11 @@ body {
 .navbar-scrolled {
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.92),
-    rgba(255, 255, 255, 0.82)
+    rgba(255, 255, 255, 0.85),
+    rgba(255, 255, 255, 0.7)
   );
   border-bottom: none;
-  backdrop-filter: blur(18px) saturate(1.2);
+  backdrop-filter: blur(20px) saturate(1.4);
   box-shadow: 0 14px 34px rgba(15, 23, 42, 0.18);
 }
 
@@ -482,6 +482,10 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0.35rem;
+}
+
+.nav-icon-link::after {
+  display: none;
 }
 
 .nav-icon-link svg,
@@ -559,25 +563,37 @@ body {
 /* Mobile menu */
 @media (max-width: 768px) {
   .nav-menu {
-    position: fixed;
-    top: 72px;
+    position: absolute;
+    top: calc(100% + 12px);
     left: 0;
     right: 0;
     flex-direction: column;
     align-items: stretch;
-    background-color: rgba(253, 248, 247, 0.98);
-    backdrop-filter: blur(10px);
-    padding: 1.5rem;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(255, 255, 255, 0.88)
+    );
+    backdrop-filter: blur(18px) saturate(1.2);
+    padding: 0;
     gap: 1rem;
     box-shadow: 0 10px 30px rgba(23, 52, 70, 0.1);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.2s ease, transform 0.3s ease;
+    border-radius: 22px;
+    z-index: 60;
   }
 
   .nav-menu-active {
     max-height: 400px;
     padding: 1.5rem;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 
   .nav-link {
