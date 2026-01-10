@@ -1,645 +1,232 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FoundersFlow</title>
-    <meta
-      name="description"
-      content="FoundersFlow helps founders, CEOs, and senior leaders build a credible personal brand on LinkedIn and Substack, without spending hours writing."
-    />
-    <meta property="og:title" content="FoundersFlow - Premium LinkedIn + Substack Ghostwriting" />
-    <meta property="og:description" content="Your voice. Our process. Seamless flow. Build a credible personal brand without spending hours writing." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://foundersflow.co.uk/assets/foundersflowlogo.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="FoundersFlow - Premium LinkedIn + Substack Ghostwriting" />
-    <meta name="twitter:description" content="Your voice. Our process. Seamless flow." />
-    <link rel="icon" type="image/png" href="assets/foundersflowlogo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                blue: "#0085FF",
-                dark: "#173446",
-                white: "#FDF8F7",
-                light: "#49A3FF",
-              },
-            },
-            boxShadow: {
-              soft: "0 30px 80px -60px rgba(23, 52, 70, 0.45)",
-            },
-          },
-        },
-      };
-    </script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="bg-brand-white text-brand-dark antialiased">
-    <nav id="navbar" class="navbar">
-      <div class="nav-inner mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#hero" class="nav-brand transition-opacity hover:opacity-80">
-          <img src="assets/foundersflowlogo.png" alt="FoundersFlow" class="nav-logo" />
-          <span class="nav-title">FoundersFlow</span>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <button id="mobile-menu-btn" class="hamburger md:hidden" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+  <title>FoundersFlow — Ghostwriting for Founders</title>
+  <meta name="description" content="We help founders and CEOs build a credible personal brand on LinkedIn and Substack — without spending hours writing." />
 
-        <div id="nav-menu" class="nav-menu">
-          <a href="#what-we-do" class="nav-link">What We Do</a>
-          <a href="#our-approach" class="nav-link">Approach</a>
-          <a href="#how-it-works" class="nav-link">How It Works</a>
-          <a href="#packages" class="nav-link">Packages</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
-      </div>
-    </nav>
+  <meta property="og:title" content="FoundersFlow — Ghostwriting for Founders" />
+  <meta property="og:description" content="Your thinking, written clearly. Human-led. AI-optimised." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://foundersflow.co.uk/assets/foundersflowlogo.png" />
 
-    <main>
-      <section
-        id="hero"
-        class="relative overflow-hidden bg-gradient-to-br from-brand-white via-white to-[#E6F0FF]"
-      >
-        <div class="hero-video">
-          <video class="hero-video-media" autoplay muted loop playsinline aria-hidden="true">
-            <source src="assets/newfounderflowvideo.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="hero-glow hero-glow-one"></div>
-        <div class="hero-glow hero-glow-two"></div>
-        <div class="hero-grid"></div>
-        <div class="relative z-10 mx-auto flex max-w-6xl flex-col items-center gap-10 px-6 pb-20 pt-6 md:pb-28 md:pt-10">
-          <div class="hero-content mx-auto max-w-4xl text-center">
-            <div class="hero-stack space-y-7">
-              <p
-                class="reveal hero-pill text-sm font-semibold uppercase tracking-[0.3em]"
-                data-reveal-delay="120"
-              >
-                Foundersflow
-              </p>
-              <h1
-                class="reveal hero-title text-4xl font-semibold leading-[1.05] md:text-6xl"
-                data-reveal-delay="180"
-              >
-                Ghostwriting agency for founders
-              </h1>
-              <p class="reveal hero-lede text-lg md:text-xl" data-reveal-delay="230">
-                FoundersFlow helps founders, CEOs, and senior leaders build a credible personal brand on
-                Linkedin and Substack, without spending hours writing.
-              </p>
-              <p class="reveal hero-body text-sm leading-relaxed md:text-base" data-reveal-delay="280">
-                We turn your thinking, experience, and perspective into consistent written content
-                that builds trust over time.
-              </p>
-              <div class="reveal hero-divider" data-reveal-delay="310"></div>
-              <p class="reveal hero-tagline text-base font-semibold md:text-lg" data-reveal-delay="330">
-                Your voice. Our process. Seamless flow
-              </p>
-              <div class="reveal hero-actions pt-2" data-reveal-delay="380">
-                <a href="#contact" class="btn-primary inline-flex items-center justify-center px-6 py-3 text-sm font-semibold">
-                  Enquire now
-                </a>
-                <a href="#how-it-works" class="btn-secondary inline-flex items-center justify-center px-6 py-3 text-sm font-semibold">
-                  See how it works
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <link rel="icon" type="image/png" href="assets/foundersflowlogo.png" />
 
-      <section id="what-we-do" class="section-padding section-shell">
-        <div class="mx-auto max-w-5xl px-6">
-          <div class="grid gap-10 md:grid-cols-[0.8fr_1.2fr] md:items-start">
-            <div class="reveal space-y-4">
-              <p class="section-kicker">What We Do</p>
-              <h2 class="section-title text-3xl md:text-4xl">LinkedIn + Substack, done for you.</h2>
-              <p class="text-sm text-brand-dark/65">Built from your thinking, delivered weekly.</p>
-            </div>
-            <div class="reveal space-y-6" data-reveal-delay="140">
-              <p class="text-xl leading-relaxed text-brand-dark/85 md:text-2xl">
-                FoundersFlow helps founders, CEOs, and senior leaders build a credible personal brand on
-                LinkedIn and Substack, without spending hours writing.
-                <span class="mt-4 block">
-                  We turn your thinking, experience, and perspective into consistent written content
-                  that builds trust over time.
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
 
-      <section id="our-approach" class="section-padding section-shell bg-white">
-        <div class="mx-auto max-w-6xl px-6">
-          <div class="reveal space-y-6 text-center">
-            <p class="section-kicker">Our Approach</p>
-            <h2 class="section-title text-3xl md:text-4xl">Human-led, AI-optimised</h2>
-          </div>
-          <div class="mt-12 grid gap-6 md:grid-cols-3">
-            <div class="reveal approach-card" aria-label="Human-crafted">
-              <div class="approach-header">
-                <span class="approach-icon">01</span>
-                <h3 class="approach-title">Human-crafted</h3>
-              </div>
-              <p class="approach-text">
-                Every piece of content is reviewed, refined, and finalised by a human.
-              </p>
-              <p class="approach-text">
-                Judgment, nuance, tone, and restraint come first.
-              </p>
-            </div>
-            <div class="reveal approach-card" data-reveal-delay="120" aria-label="AI-optimised">
-              <div class="approach-header">
-                <span class="approach-icon">02</span>
-                <h3 class="approach-title">AI-optimised</h3>
-              </div>
-              <p class="approach-text">
-                We use AI to extract patterns and support efficiency:
-              </p>
-              <ul class="approach-list">
-                <li>language patterns</li>
-                <li>phrasing habits</li>
-                <li>structure and optimisation</li>
-              </ul>
-              <p class="approach-text">
-                AI supports the process, it does not replace thinking or authorship.
-              </p>
-            </div>
-            <div class="reveal approach-card" data-reveal-delay="220" aria-label="Seamless flow">
-              <div class="approach-header">
-                <span class="approach-icon">03</span>
-                <h3 class="approach-title">Seamless flow</h3>
-              </div>
-              <p class="approach-text">
-                Our goal is to remove friction from writing.
-              </p>
-              <p class="approach-text">
-                Clients don’t need to “sit down and write” or manage complex workflows.
-                Content happens in the background while they focus on building.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="how-it-works" class="section-padding section-shell">
-        <div class="mx-auto max-w-5xl px-6">
-          <div class="reveal space-y-4 text-center">
-            <p class="section-kicker">How It Works</p>
-            <h2 class="section-title text-3xl md:text-4xl">A simple weekly rhythm</h2>
-          </div>
-          <div class="mt-12">
-            <div class="timeline relative ml-3 border-l border-brand-blue/20">
-              <div class="reveal timeline-step relative mb-10 pl-10">
-                <span class="timeline-dot"></span>
-                <span class="timeline-step-number">01</span>
-                <h3 class="text-lg font-semibold text-brand-dark">Step 1 — Onboarding & Direction</h3>
-                <p class="mt-2 text-sm text-brand-dark/70">
-                  We start with a call to understand:
-                </p>
-                <ul class="mt-3 space-y-2 text-sm text-brand-dark/70">
-                  <li>how the client thinks</li>
-                  <li>how they make decisions</li>
-                  <li>what they want to be known for</li>
-                </ul>
-                <p class="mt-3 text-sm text-brand-dark/70">
-                  This is about context, not content ideas.
-                </p>
-              </div>
-              <div class="reveal timeline-step relative mb-10 pl-10" data-reveal-delay="120">
-                <span class="timeline-dot"></span>
-                <span class="timeline-step-number">02</span>
-                <h3 class="text-lg font-semibold text-brand-dark">Step 2 — Voice & Pattern Capture</h3>
-                <p class="mt-2 text-sm text-brand-dark/70">
-                  We collect existing material such as:
-                </p>
-                <ul class="mt-3 space-y-2 text-sm text-brand-dark/70">
-                  <li>emails</li>
-                  <li>texts</li>
-                  <li>LinkedIn posts</li>
-                  <li>Substack drafts</li>
-                  <li>WhatsApp voice notes</li>
-                </ul>
-                <p class="mt-3 text-sm text-brand-dark/70">
-                  We analyse patterns in how they communicate and build a voice profile.
-                </p>
-              </div>
-              <div class="reveal timeline-step relative mb-10 pl-10" data-reveal-delay="220">
-                <span class="timeline-dot"></span>
-                <span class="timeline-step-number">03</span>
-                <h3 class="text-lg font-semibold text-brand-dark">Step 3 — Ongoing Input</h3>
-                <p class="mt-2 text-sm text-brand-dark/70">
-                  Clients can send:
-                </p>
-                <ul class="mt-3 space-y-2 text-sm text-brand-dark/70">
-                  <li>weekly thoughts</li>
-                  <li>trends</li>
-                  <li>topics</li>
-                  <li>quick voice notes</li>
-                </ul>
-                <p class="mt-3 text-sm text-brand-dark/70">
-                  This keeps content current without creating pressure.
-                </p>
-              </div>
-              <div class="reveal timeline-step relative pl-10" data-reveal-delay="320">
-                <span class="timeline-dot"></span>
-                <span class="timeline-step-number">04</span>
-                <h3 class="text-lg font-semibold text-brand-dark">Step 4 — Weekly Delivery</h3>
-                <p class="mt-2 text-sm text-brand-dark/70">
-                  We draft your content in Google Docs, organised by week.
-                  <span class="mt-3 block">
-                    You review, comment, and approve posts before anything goes live, giving you full visibility
-                    and control over what’s published.
-                  </span>
-                  <span class="mt-3 block">
-                    We send written posts weekly (typically Monday morning), ready to post or we offer a
-                    scheduling service meaning the posts roll out whilst you build.
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="packages" class="section-padding section-shell bg-white">
-        <div class="mx-auto max-w-6xl px-6">
-          <div class="reveal space-y-4 text-center">
-            <p class="section-kicker">Packages</p>
-            <h2 class="section-title text-3xl md:text-4xl">Choose the flow that fits</h2>
-          </div>
-          <div class="mt-12 grid gap-6 lg:grid-cols-3">
-            <div class="reveal pricing-card">
-              <h3 class="text-xl font-semibold text-brand-dark">Starter</h3>
-              <ul class="space-y-3 text-sm text-brand-dark/75">
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Up to 8 LinkedIn posts per month
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Written in the client’s voice
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Human-edited, AI-optimised
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Weekly delivery
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  No scheduling
-                </li>
-              </ul>
-              <p class="mt-6 text-sm text-brand-dark/60">
-                Best for founders starting to build consistency.
-              </p>
-              <a href="mailto:hello@foundersflow.co.uk" class="mt-6 block w-full rounded-full border-2 border-brand-blue py-2.5 text-center text-sm font-semibold text-brand-blue transition-all hover:bg-brand-blue hover:text-white">
-                Get Started
-              </a>
-            </div>
-            <div class="reveal pricing-card pricing-card-featured border-brand-blue/40" data-reveal-delay="120">
-              <div class="flex items-center justify-between">
-                <h3 class="text-xl font-semibold text-brand-dark">Growth</h3>
-                <span class="badge">Popular</span>
-              </div>
-              <ul class="space-y-3 text-sm text-brand-dark/75">
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Up to 12 LinkedIn posts per month
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Weekly input via voice notes or messages
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Human-crafted, AI-optimised
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Scheduled weekly
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Strategy support
-                </li>
-              </ul>
-              <p class="mt-6 text-sm text-brand-dark/60">
-                Best for founders growing visibility and authority.
-              </p>
-              <a href="mailto:hello@foundersflow.co.uk" class="mt-6 block w-full rounded-full bg-gradient-to-r from-brand-blue to-brand-light py-2.5 text-center text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl">
-                Get Started
-              </a>
-            </div>
-            <div class="reveal pricing-card" data-reveal-delay="220">
-              <h3 class="text-xl font-semibold text-brand-dark">Authority</h3>
-              <ul class="space-y-3 text-sm text-brand-dark/75">
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Up to 16 LinkedIn posts per month
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Strategy support
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Human-edited, AI-optimised
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Weekly delivery
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  Scheduled posts
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  3 substack long form content included
-                </li>
-              </ul>
-              <p class="mt-6 text-sm text-brand-dark/60">
-                Best for founders and CEOs with high visibility goals.
-              </p>
-              <a href="mailto:hello@foundersflow.co.uk" class="mt-6 block w-full rounded-full border-2 border-brand-blue py-2.5 text-center text-sm font-semibold text-brand-blue transition-all hover:bg-brand-blue hover:text-white">
-                Get Started
-              </a>
-            </div>
-          </div>
-
-          <div class="reveal mt-12 rounded-2xl border border-dashed border-brand-blue/30 bg-brand-white p-8 text-center">
-            <h3 class="text-xl font-semibold text-brand-dark">Substack (Add-Ons)</h3>
-            <p class="mt-3 text-sm text-brand-dark/70">
-              Substack writing is available as an add-on to any package.
-            </p>
-            <p class="mt-4 text-sm font-semibold text-brand-dark">Examples of add-ons</p>
-            <div class="mt-3 space-y-2 text-sm text-brand-dark/70">
-              <p>Long-form Substack articles</p>
-              <p>Editing and restructuring existing drafts</p>
-              <p>Repurposing LinkedIn posts into Substack essays</p>
-            </div>
-            <p class="mt-4 text-sm font-semibold text-brand-dark">
-              Pricing discussed privately based on scope.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--
-      Testimonials placeholder
-      <section id="testimonials" class="section-padding">
-        <div class="mx-auto max-w-6xl px-6">
-          <div class="space-y-4 text-center">
-            <p class="section-kicker">Testimonials</p>
-            <h2 class="section-title text-3xl md:text-4xl">Trusted by Founders</h2>
-          </div>
-          <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div class="rounded-2xl border border-brand-dark/10 bg-white p-6 shadow-sm">
-              <p class="text-sm text-brand-dark/70">Client quote placeholder.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      -->
-
-      <section id="contact" class="section-padding section-shell">
-        <div class="mx-auto max-w-5xl px-6">
-          <div class="reveal rounded-3xl bg-white p-8 shadow-soft md:p-12">
-            <div class="space-y-3 text-center">
-              <h2 class="section-title text-3xl">Get Started</h2>
-              <p class="text-sm text-brand-dark/70">
-                Tell us a bit about you — we’ll take it from there.
-              </p>
-            </div>
-            <!-- Replace email in action if needed: https://formsubmit.co/your@email.com -->
-            <form
-              action="https://formsubmit.co/hello@foundersflow.co.uk"
-              method="POST"
-              class="mt-8 grid gap-5"
-            >
-              <input type="hidden" name="_captcha" value="false" />
-              <div class="grid gap-5 md:grid-cols-2">
-                <label class="space-y-2 text-sm text-brand-dark/70">
-                  <span>Name *</span>
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    class="form-input"
-                    placeholder="Your name"
-                  />
-                </label>
-                <label class="space-y-2 text-sm text-brand-dark/70">
-                  <span>Founder of…</span>
-                  <input
-                    type="text"
-                    name="founder_of"
-                    class="form-input"
-                    placeholder="Company name"
-                  />
-                </label>
-              </div>
-              <div class="grid gap-5 md:grid-cols-2">
-                <label class="space-y-2 text-sm text-brand-dark/70">
-                  <span>Occupation</span>
-                  <input
-                    type="text"
-                    name="occupation"
-                    class="form-input"
-                    placeholder="Role or title"
-                  />
-                </label>
-                <label class="space-y-2 text-sm text-brand-dark/70">
-                  <span>Package</span>
-                  <select name="package" class="form-input">
-                    <option>Starter</option>
-                    <option>Growth</option>
-                    <option>Authority</option>
-                  </select>
-                </label>
-              </div>
-              <label class="space-y-2 text-sm text-brand-dark/70">
-                <span>Message</span>
-                <textarea
-                  name="message"
-                  rows="5"
-                  class="form-input"
-                  placeholder="Tell us about your goals"
-                ></textarea>
-              </label>
-              <button type="submit" class="btn-primary w-full px-6 py-3 text-sm font-semibold">
-                Get Started
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="border-t border-brand-dark/10 bg-white">
-      <div class="mx-auto flex max-w-6xl flex-col items-center gap-2 px-6 py-6 text-sm text-brand-dark/60 md:flex-row md:justify-between">
-        <span>Copyright FoundersFlow © 2025</span>
-        <a href="mailto:hello@foundersflow.co.uk" class="text-brand-dark/70 hover:text-brand-blue">
-          hello@foundersflow.co.uk
-        </a>
-      </div>
-    </footer>
-
-    <script>
-      // Reveal on scroll animation
-      const revealElements = document.querySelectorAll(".reveal");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("reveal-visible");
-              observer.unobserve(entry.target);
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: "#0085FF",
+              light: "#49A3FF",
+              dark: "#173446",
+              white: "#FDF8F7"
             }
-          });
-        },
-        { threshold: 0.2 }
-      );
-
-      revealElements.forEach((element) => {
-        const delay = element.dataset.revealDelay;
-        if (delay) {
-          element.style.transitionDelay = `${delay}ms`;
-        }
-        observer.observe(element);
-      });
-
-      // Navbar scroll effect
-      const navbar = document.getElementById("navbar");
-      window.addEventListener("scroll", () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > 50) {
-          navbar.classList.add("navbar-scrolled");
-        } else {
-          navbar.classList.remove("navbar-scrolled");
-        }
-      });
-
-      // Mobile menu toggle
-      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-      const navMenu = document.getElementById("nav-menu");
-
-      mobileMenuBtn.addEventListener("click", () => {
-        mobileMenuBtn.classList.toggle("hamburger-active");
-        navMenu.classList.toggle("nav-menu-active");
-      });
-
-      // Close mobile menu when clicking a link
-      const navLinks = navMenu.querySelectorAll("a");
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenuBtn.classList.remove("hamburger-active");
-          navMenu.classList.remove("nav-menu-active");
-        });
-      });
-
-      // Close mobile menu when clicking outside
-      document.addEventListener("click", (e) => {
-        if (!navMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-          mobileMenuBtn.classList.remove("hamburger-active");
-          navMenu.classList.remove("nav-menu-active");
-        }
-      });
-
-      // Form validation and submission feedback
-      const contactForm = document.querySelector("#contact form");
-
-      if (contactForm) {
-        contactForm.addEventListener("submit", (e) => {
-          const submitBtn = contactForm.querySelector('button[type="submit"]');
-
-          submitBtn.textContent = "Sending...";
-          submitBtn.disabled = true;
-
-          // FormSubmit will handle the actual submission
-          // The button will be re-enabled on page reload
-        });
-      }
-
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          const href = this.getAttribute("href");
-          if (href === "#") return;
-
-          e.preventDefault();
-          const target = document.querySelector(href);
-
-          if (target) {
-            const navbarHeight = navbar.offsetHeight;
-            const targetPosition = target.offsetTop - navbarHeight - 20;
-
-            window.scrollTo({
-              top: targetPosition,
-              behavior: "smooth"
-            });
+          },
+          boxShadow: {
+            soft: "0 30px 80px -60px rgba(23,52,70,.45)"
           }
-        });
-      });
+        }
+      }
+    }
+  </script>
 
-      // Slow the hero video playback for a calmer feel.
-      document.querySelectorAll(".hero-video-media").forEach((video) => {
-        const setRate = () => {
-          video.playbackRate = 0.55;
-        };
-        video.addEventListener("loadedmetadata", setRate);
-        setRate();
-      });
-    </script>
-  </body>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-brand-white text-brand-dark antialiased">
+
+<!-- NAV -->
+<nav id="navbar" class="navbar">
+  <div class="mx-auto max-w-6xl flex items-center justify-between px-6 py-4">
+    <a href="#hero" class="flex items-center gap-2 hover:opacity-80">
+      <img src="assets/foundersflowlogo.png" class="h-7 w-7" alt="FoundersFlow" />
+      <span class="font-semibold">FoundersFlow</span>
+    </a>
+
+    <div class="hidden md:flex gap-6 text-sm">
+      <a href="#what" class="nav-link">What</a>
+      <a href="#approach" class="nav-link">Approach</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#packages" class="nav-link">Packages</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" class="relative overflow-hidden bg-gradient-to-br from-brand-white via-white to-[#E6F0FF]">
+
+  <div class="hero-video">
+    <video autoplay muted loop playsinline class="hero-video-media">
+      <source src="assets/newfounderflowvideo.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-5xl px-6 pt-24 pb-32 text-center">
+
+    <p class="uppercase tracking-[0.35em] text-xs font-semibold text-brand-dark/60 mb-6">
+      FoundersFlow
+    </p>
+
+    <!-- SCROLL TEXT -->
+    <div class="relative h-[190px] md:h-[220px]">
+
+      <div class="hero-line active">
+        <h1 class="text-4xl md:text-6xl font-semibold uppercase tracking-widest">
+          Ghostwriting for founders
+        </h1>
+      </div>
+
+      <div class="hero-line">
+        <p class="text-lg md:text-xl">
+          We help founders, CEOs, and senior leaders build a credible personal brand on
+          LinkedIn and Substack — without spending hours writing.
+        </p>
+      </div>
+
+      <div class="hero-line">
+        <p class="text-base md:text-lg">
+          Your thinking, experience, and perspective — turned into consistent written
+          content that compounds trust over time.
+        </p>
+      </div>
+
+      <div class="hero-line">
+        <p class="text-lg md:text-xl font-semibold">
+          Your voice. Our process. Seamless flow.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="mt-10 flex justify-center gap-4">
+      <a href="#contact" class="btn-primary px-6 py-3 text-sm font-semibold">Enquire now</a>
+      <a href="#process" class="btn-secondary px-6 py-3 text-sm font-semibold">See how it works</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHAT -->
+<section id="what" class="section-padding">
+  <div class="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-10 items-start">
+    <div>
+      <p class="section-kicker">What we do</p>
+      <h2 class="section-title">LinkedIn + Substack, done for you.</h2>
+    </div>
+    <p class="text-xl leading-relaxed text-brand-dark/80">
+      We turn raw thinking into clear, credible writing — delivered weekly,
+      reviewed by humans, and optimised with AI.
+    </p>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section id="approach" class="section-padding bg-white">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="text-center mb-12">
+      <p class="section-kicker">Approach</p>
+      <h2 class="section-title">Human-led. AI-optimised.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="approach-card">
+        <h3>Human-crafted</h3>
+        <p>Judgement, nuance, tone, and restraint come first.</p>
+      </div>
+      <div class="approach-card">
+        <h3>AI-supported</h3>
+        <p>Used to detect patterns, structure ideas, and improve consistency.</p>
+      </div>
+      <div class="approach-card">
+        <h3>Low friction</h3>
+        <p>Clients never need to “sit down and write”. Content happens in the background.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section-padding">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="text-center mb-12">
+      <p class="section-kicker">Process</p>
+      <h2 class="section-title">A simple weekly rhythm</h2>
+    </div>
+
+    <ol class="timeline">
+      <li><strong>Onboarding</strong> — understand how you think, decide, and communicate.</li>
+      <li><strong>Voice capture</strong> — analyse existing writing, messages, and notes.</li>
+      <li><strong>Ongoing input</strong> — quick thoughts, voice notes, trends.</li>
+      <li><strong>Weekly delivery</strong> — clear drafts, ready to post or scheduled.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages" class="section-padding bg-white">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="text-center mb-12">
+      <p class="section-kicker">Packages</p>
+      <h2 class="section-title">Choose the flow that fits</h2>
+    </div>
+
+    <!-- keep your existing pricing cards here unchanged if you want -->
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-padding">
+  <div class="mx-auto max-w-4xl px-6">
+    <div class="bg-white p-10 rounded-3xl shadow-soft text-center">
+      <h2 class="section-title mb-2">Get started</h2>
+      <p class="text-sm text-brand-dark/70 mb-8">Tell us a bit about you.</p>
+
+      <form action="https://formsubmit.co/hello@foundersflow.co.uk" method="POST" class="grid gap-5">
+        <input type="hidden" name="_captcha" value="false" />
+        <input class="form-input" name="name" placeholder="Name" required />
+        <input class="form-input" name="company" placeholder="Company" />
+        <textarea class="form-input" rows="4" name="message" placeholder="What are you building?"></textarea>
+        <button class="btn-primary py-3 text-sm font-semibold">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t bg-white py-6 text-center text-sm text-brand-dark/60">
+  © FoundersFlow 2025 · hello@foundersflow.co.uk
+</footer>
+
+<script>
+/* HERO SCROLL */
+const hero = document.getElementById("hero");
+const lines = document.querySelectorAll(".hero-line");
+
+function updateHero() {
+  const r = hero.getBoundingClientRect();
+  const p = Math.min(Math.max(-r.top / r.height, 0), 1);
+  let i = p > .7 ? 3 : p > .45 ? 2 : p > .2 ? 1 : 0;
+  lines.forEach((l, idx) => l.classList.toggle("active", idx === i));
+}
+window.addEventListener("scroll", updateHero);
+window.addEventListener("load", updateHero);
+
+/* VIDEO SPEED */
+document.querySelectorAll("video").forEach(v => v.playbackRate = 0.55);
+</script>
+
+</body>
 </html>
