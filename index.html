@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FoundersFlow</title>
+    <title>FoundersFlow - Premium LinkedIn & Substack Ghostwriting for Founders</title>
     <meta
       name="description"
       content="FoundersFlow helps founders, CEOs, and senior leaders build a credible personal brand on LinkedIn and Substack, without spending hours writing."
     />
+    <link rel="canonical" href="https://foundersflow.co.uk/" />
     <meta property="og:title" content="FoundersFlow - Premium LinkedIn + Substack Ghostwriting" />
     <meta property="og:description" content="Your voice. Our process. Seamless flow. Build a credible personal brand without spending hours writing." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://foundersflow.co.uk/" />
     <meta property="og:image" content="https://foundersflow.co.uk/assets/foundersflowlogo.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="FoundersFlow - Premium LinkedIn + Substack Ghostwriting" />
     <meta name="twitter:description" content="Your voice. Our process. Seamless flow." />
+    <meta name="twitter:image" content="https://foundersflow.co.uk/assets/foundersflowlogo.png" />
     <link rel="icon" type="image/png" href="assets/foundersflowlogo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,6 +46,45 @@
       };
     </script>
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FoundersFlow",
+      "url": "https://foundersflow.co.uk",
+      "logo": "https://foundersflow.co.uk/assets/foundersflowlogo.png",
+      "description": "Premium LinkedIn and Substack ghostwriting service for founders, CEOs, and senior leaders.",
+      "email": "hello@foundersflow.co.uk",
+      "sameAs": [
+        "https://www.linkedin.com/company/foundersflow-co/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "GB"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Starter Package",
+            "description": "Up to 8 LinkedIn posts per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Growth Package",
+            "description": "Up to 12 LinkedIn posts per month with strategy support"
+          },
+          {
+            "@type": "Offer",
+            "name": "Authority Package",
+            "description": "Up to 16 LinkedIn posts per month plus Substack content"
+          }
+        ]
+      }
+    }
+    </script>
   </head>
   <body class="bg-brand-white text-brand-dark antialiased">
     <nav id="navbar" class="navbar">
@@ -52,13 +94,13 @@
           <span class="nav-title">FoundersFlow</span>
         </a>
 
-        <button id="mobile-menu-btn" class="hamburger md:hidden" aria-label="Toggle menu">
+        <button id="mobile-menu-btn" class="hamburger md:hidden" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <div id="nav-menu" class="nav-menu">
+        <div id="nav-menu" class="nav-menu" role="navigation">
           <a href="#what-we-do" class="nav-link">What We Do</a>
           <a href="#our-approach" class="nav-link">Approach</a>
           <a href="#how-it-works" class="nav-link">How It Works</a>
@@ -69,7 +111,7 @@
             class="nav-link nav-icon-link"
             aria-label="FoundersFlow LinkedIn"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.25 10H6v8h2.25v-8ZM7.12 6.5a1.32 1.32 0 1 0 0 2.64 1.32 1.32 0 0 0 0-2.64ZM18 13.4c0-2.1-1.12-3.45-2.94-3.45a2.55 2.55 0 0 0-2.31 1.27h-.03V10H10.5v8h2.25v-4.18c0-1.1.21-2.16 1.57-2.16 1.34 0 1.36 1.25 1.36 2.24V18H18v-4.6Z" />
@@ -287,13 +329,13 @@
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
-                  Written with client voice profile
+                  Written with voice profile
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
-                  Human-crafted, AI optimised
+                  Human-crafted, AI-optimised
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
@@ -311,7 +353,7 @@
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-dark/40" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                     <path d="M6 6l8 8M14 6l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                   </svg>
-                  Scheduling content
+                  Scheduled posts
                 </li>
                 <li class="package-excluded flex items-start gap-2">
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-dark/40" viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -349,19 +391,19 @@
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
-                  Weekly input via voice notes or messages
+                  Human-crafted, AI-optimised
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
-                  Human-crafted, AI optimised
+                  Weekly delivery
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
-                  Scheduled weekly
+                  Scheduled posts
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
@@ -402,7 +444,7 @@
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
-                  Human-crafted, AI optimised
+                  Human-crafted, AI-optimised
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
@@ -450,23 +492,6 @@
         </div>
       </section>
 
-      <!--
-      Testimonials placeholder
-      <section id="testimonials" class="section-padding">
-        <div class="mx-auto max-w-6xl px-6">
-          <div class="space-y-4 text-center">
-            <p class="section-kicker">Testimonials</p>
-            <h2 class="section-title text-3xl md:text-4xl">Trusted by Founders</h2>
-          </div>
-          <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div class="rounded-2xl border border-brand-dark/10 bg-white p-6 shadow-sm">
-              <p class="text-sm text-brand-dark/70">Client quote placeholder.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      -->
-
       <section id="contact" class="section-padding section-shell">
         <div class="mx-auto max-w-5xl px-6">
           <div class="reveal rounded-3xl bg-white p-8 shadow-soft md:p-12">
@@ -495,6 +520,18 @@
                   />
                 </label>
                 <label class="space-y-2 text-sm text-brand-dark/70">
+                  <span>Email *</span>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    class="form-input"
+                    placeholder="your@email.com"
+                  />
+                </label>
+              </div>
+              <div class="grid gap-5 md:grid-cols-2">
+                <label class="space-y-2 text-sm text-brand-dark/70">
                   <span>Founder of…</span>
                   <input
                     type="text"
@@ -503,10 +540,8 @@
                     placeholder="Company name"
                   />
                 </label>
-              </div>
-              <div class="grid gap-5 md:grid-cols-2">
                 <label class="space-y-2 text-sm text-brand-dark/70">
-                  <span>Occupation</span>
+                  <span>Role</span>
                   <input
                     type="text"
                     name="occupation"
@@ -514,15 +549,15 @@
                     placeholder="Role or title"
                   />
                 </label>
-                <label class="space-y-2 text-sm text-brand-dark/70">
-                  <span>Package</span>
-                  <select name="package" class="form-input">
-                    <option>Starter</option>
-                    <option>Growth</option>
-                    <option>Authority</option>
-                  </select>
-                </label>
               </div>
+              <label class="space-y-2 text-sm text-brand-dark/70">
+                <span>Package</span>
+                <select name="package" class="form-input">
+                  <option>Starter</option>
+                  <option>Growth</option>
+                  <option>Authority</option>
+                </select>
+              </label>
               <label class="space-y-2 text-sm text-brand-dark/70">
                 <span>Message</span>
                 <textarea
@@ -553,7 +588,7 @@
             class="social-link text-brand-dark/70 hover:text-brand-blue"
             aria-label="FoundersFlow LinkedIn"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.25 10H6v8h2.25v-8ZM7.12 6.5a1.32 1.32 0 1 0 0 2.64 1.32 1.32 0 0 0 0-2.64ZM18 13.4c0-2.1-1.12-3.45-2.94-3.45a2.55 2.55 0 0 0-2.31 1.27h-.03V10H10.5v8h2.25v-4.18c0-1.1.21-2.16 1.57-2.16 1.34 0 1.36 1.25 1.36 2.24V18H18v-4.6Z" />
@@ -563,134 +598,6 @@
       </div>
     </footer>
 
-    <script>
-      // Reveal on scroll animation
-      const revealElements = document.querySelectorAll(".reveal");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("reveal-visible");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.2 }
-      );
-
-      revealElements.forEach((element) => {
-        const delay = element.dataset.revealDelay;
-        if (delay) {
-          element.style.transitionDelay = `${delay}ms`;
-        }
-        observer.observe(element);
-      });
-
-      // Navbar scroll effect
-      const navbar = document.getElementById("navbar");
-      window.addEventListener("scroll", () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > 50) {
-          navbar.classList.add("navbar-scrolled");
-        } else {
-          navbar.classList.remove("navbar-scrolled");
-        }
-      });
-
-      // Mobile menu toggle
-      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-      const navMenu = document.getElementById("nav-menu");
-
-      mobileMenuBtn.addEventListener("click", () => {
-        mobileMenuBtn.classList.toggle("hamburger-active");
-        navMenu.classList.toggle("nav-menu-active");
-      });
-
-      // Close mobile menu when clicking a link
-      const navLinks = navMenu.querySelectorAll("a");
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenuBtn.classList.remove("hamburger-active");
-          navMenu.classList.remove("nav-menu-active");
-        });
-      });
-
-      // Close mobile menu when clicking outside
-      document.addEventListener("click", (e) => {
-        if (!navMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-          mobileMenuBtn.classList.remove("hamburger-active");
-          navMenu.classList.remove("nav-menu-active");
-        }
-      });
-
-      // Form validation and submission feedback
-      const contactForm = document.querySelector("#contact form");
-
-      if (contactForm) {
-        contactForm.addEventListener("submit", (e) => {
-          const submitBtn = contactForm.querySelector('button[type="submit"]');
-
-          submitBtn.textContent = "Sending...";
-          submitBtn.disabled = true;
-
-          // FormSubmit will handle the actual submission
-          // The button will be re-enabled on page reload
-        });
-      }
-
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          const href = this.getAttribute("href");
-          if (href === "#") return;
-
-          e.preventDefault();
-          const target = document.querySelector(href);
-
-          if (target) {
-            const navbarHeight = navbar.offsetHeight;
-            const targetPosition = target.offsetTop - navbarHeight - 20;
-
-            window.scrollTo({
-              top: targetPosition,
-              behavior: "smooth"
-            });
-          }
-        });
-      });
-
-      // Hero text rotation
-      const heroSection = document.getElementById("hero");
-      const heroLines = heroSection ? heroSection.querySelectorAll(".hero-line") : [];
-      const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-      let heroIndex = 0;
-
-      const rotateHeroLines = () => {
-        if (!heroLines.length) return;
-        heroLines.forEach((line, lineIndex) => {
-          line.classList.toggle("is-active", lineIndex === heroIndex);
-        });
-      };
-
-      if (heroSection && heroLines.length) {
-        rotateHeroLines();
-        if (!prefersReduced.matches) {
-          setInterval(() => {
-            heroIndex = (heroIndex + 1) % heroLines.length;
-            rotateHeroLines();
-          }, 5000);
-        }
-      }
-
-      // Slow the hero video playback for a calmer feel.
-      document.querySelectorAll(".hero-video-media").forEach((video) => {
-        const setRate = () => {
-          video.playbackRate = 0.55;
-        };
-        video.addEventListener("loadedmetadata", setRate);
-        setRate();
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
