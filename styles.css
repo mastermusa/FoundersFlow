@@ -488,15 +488,15 @@ body {
   z-index: 50;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.85),
-    rgba(255, 255, 255, 0.7)
+    rgba(255, 255, 255, 0.78),
+    rgba(255, 255, 255, 0.6)
   );
   backdrop-filter: blur(26px) saturate(1.55);
   transition: all 0.3s ease;
   box-shadow: none;
   border-bottom: none;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow:
     0 18px 50px rgba(15, 23, 42, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.6);
@@ -505,8 +505,8 @@ body {
 .navbar-scrolled {
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.85),
-    rgba(255, 255, 255, 0.7)
+    rgba(255, 255, 255, 0.78),
+    rgba(255, 255, 255, 0.6)
   );
   border-bottom: none;
   backdrop-filter: blur(26px) saturate(1.55);
@@ -525,13 +525,13 @@ body {
 }
 
 .nav-logo {
-  height: 32px;
+  height: 28px;
   width: auto;
   display: block;
 }
 
 .nav-title {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 0.04em;
   text-transform: none;
   line-height: 1;
@@ -539,18 +539,18 @@ body {
 
 @media (min-width: 768px) {
   .nav-logo {
-    height: 40px;
+    height: 34px;
   }
 
   .nav-title {
-    font-size: 1rem;
+    font-size: 0.92rem;
   }
 }
 
 .nav-inner {
   width: 100%;
   max-width: 100%;
-  padding: 0.35rem 1.2rem;
+  padding: 0.2rem 1rem;
 }
 
 .nav-menu {
@@ -949,7 +949,7 @@ button:not(.btn-primary),
 .hero-tagline {
   font-family: "Manrope", "Sora", "Helvetica Neue", Arial, sans-serif;
   font-size: clamp(1.05rem, 2.4vw, 1.6rem);
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.5;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -961,6 +961,7 @@ button:not(.btn-primary),
   max-width: 760px;
   margin: 0 auto;
   padding: 0 1rem;
+  white-space: nowrap;
 }
 
 
