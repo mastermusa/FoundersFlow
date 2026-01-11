@@ -150,9 +150,18 @@ if (heroSection && heroLines.length) {
 
 // Slow the hero video playback for a calmer feel
 document.querySelectorAll(".hero-video-media").forEach((video) => {
+  // Set playback rate immediately to prevent flash of normal speed
+  video.playbackRate = 0.55;
+
+  // Set rate on multiple events to ensure it's applied
   const setRate = () => {
     video.playbackRate = 0.55;
   };
+
   video.addEventListener("loadedmetadata", setRate);
-  setRate();
+  video.addEventListener("loadeddata", setRate);
+  video.addEventListener("play", setRate);
+
+  // Double-check after a brief delay
+  setTimeout(setRate, 100);
 });
