@@ -125,6 +125,29 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// Hero text rotation
+const heroRotator = document.querySelector(".hero-rotator");
+const heroLines = heroRotator ? heroRotator.querySelectorAll(".hero-line") : [];
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+let heroIndex = 0;
+
+const setActiveHeroLine = () => {
+  heroLines.forEach((line, lineIndex) => {
+    line.classList.toggle("is-active", lineIndex === heroIndex);
+  });
+};
+
+if (heroLines.length) {
+  setActiveHeroLine();
+
+  if (heroLines.length > 1 && !prefersReducedMotion.matches) {
+    setInterval(() => {
+      heroIndex = (heroIndex + 1) % heroLines.length;
+      setActiveHeroLine();
+    }, 4200);
+  }
+}
+
 // Slow the hero video playback for a calmer feel
 document.querySelectorAll(".hero-video-media").forEach((video) => {
   // Set playback rate immediately to prevent flash of normal speed

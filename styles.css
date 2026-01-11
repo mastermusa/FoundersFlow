@@ -108,7 +108,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(5, 32, 92, 0.45);
+  background: rgba(5, 20, 50, 0.6);
   mix-blend-mode: multiply;
   z-index: 2;
   pointer-events: none;
@@ -133,9 +133,9 @@ body {
   background:
     linear-gradient(
       to bottom,
-      rgba(3, 7, 18, 0.85) 0%,
-      rgba(3, 7, 18, 0.6) 40%,
-      rgba(3, 7, 18, 0.22) 100%
+      rgba(3, 7, 18, 0.92) 0%,
+      rgba(3, 7, 18, 0.72) 45%,
+      rgba(3, 7, 18, 0.3) 100%
     ),
     radial-gradient(circle at 18% 12%, rgba(0, 114, 220, 0.18), transparent 60%),
     radial-gradient(circle at 80% 0%, rgba(73, 163, 255, 0.12), transparent 52%);
@@ -491,7 +491,7 @@ body {
     rgba(255, 255, 255, 0.85),
     rgba(255, 255, 255, 0.7)
   );
-  backdrop-filter: blur(20px) saturate(1.4);
+  backdrop-filter: blur(26px) saturate(1.55);
   transition: all 0.3s ease;
   box-shadow: none;
   border-bottom: none;
@@ -509,7 +509,7 @@ body {
     rgba(255, 255, 255, 0.7)
   );
   border-bottom: none;
-  backdrop-filter: blur(20px) saturate(1.4);
+  backdrop-filter: blur(26px) saturate(1.55);
   box-shadow: 0 14px 34px rgba(15, 23, 42, 0.18);
 }
 
@@ -525,13 +525,13 @@ body {
 }
 
 .nav-logo {
-  height: 36px;
+  height: 32px;
   width: auto;
   display: block;
 }
 
 .nav-title {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   letter-spacing: 0.04em;
   text-transform: none;
   line-height: 1;
@@ -539,24 +539,24 @@ body {
 
 @media (min-width: 768px) {
   .nav-logo {
-    height: 44px;
+    height: 40px;
   }
 
   .nav-title {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 }
 
 .nav-inner {
   width: 100%;
   max-width: 100%;
-  padding: 0.55rem 1.4rem;
+  padding: 0.35rem 1.2rem;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.6rem;
 }
 
 .nav-link {
@@ -863,13 +863,68 @@ button:not(.btn-primary),
 
 .hero-content {
   text-align: center;
-  max-width: 920px;
+  max-width: 880px;
 }
 
 .hero-stack {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hero-rotator {
+  position: relative;
+  width: 100%;
+  min-height: clamp(10rem, 28vh, 16rem);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  --hero-rotator-size: clamp(2.4rem, 5.6vw, 5.2rem);
+}
+
+.hero-line {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(8px);
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.8s ease;
+  pointer-events: none;
+}
+
+.hero-line.is-active {
+  opacity: 0.95;
+  transform: translateY(0);
+  filter: blur(0);
+  pointer-events: auto;
+}
+
+.hero-line-text {
+  font-family: "Manrope", "Sora", "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--hero-rotator-size);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.06;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 10px 38px rgba(0, 0, 0, 0.45);
+  max-width: 920px;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.hero-cta {
+  margin-top: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  padding: 0.85rem 2.2rem;
+  box-shadow: 0 22px 50px -30px rgba(255, 255, 255, 0.3), 0 18px 50px -30px rgba(39, 120, 219, 0.55);
 }
 
 .hero-stack {
@@ -1069,16 +1124,12 @@ button:not(.btn-primary),
   }
 
   .nav-inner {
-    padding: 0.55rem 1.1rem;
+    padding: 0.35rem 1.1rem;
   }
 
-  .hero-title {
-    font-size: clamp(2.5rem, 10vw, 5rem);
-    letter-spacing: 0.06em;
-  }
-
-  .hero-tagline {
-    font-size: clamp(1.25rem, 5vw, 2.5rem);
+  .hero-rotator {
+    --hero-rotator-size: clamp(2rem, 10.5vw, 3.1rem);
+    min-height: clamp(9rem, 24vh, 13rem);
   }
 
   .hero-panel {
@@ -1087,14 +1138,8 @@ button:not(.btn-primary),
 }
 
 @media (max-width: 360px) {
-  .hero-title {
-    font-size: clamp(2rem, 11vw, 3rem);
-    letter-spacing: 0.04em;
-  }
-
-  .hero-tagline {
-    font-size: clamp(1rem, 5.5vw, 1.5rem);
-    letter-spacing: 0.08em;
+  .hero-rotator {
+    --hero-rotator-size: clamp(1.8rem, 11vw, 2.7rem);
   }
 }
 
