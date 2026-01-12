@@ -494,9 +494,13 @@ body {
 }
 
 .step-card {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.82),
+    rgba(255, 255, 255, 0.68)
+  );
+  backdrop-filter: blur(26px) saturate(1.55);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 24px;
   padding: 2.75rem 2.5rem;
   padding-left: 5rem;
@@ -504,6 +508,9 @@ body {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  box-shadow:
+    0 18px 50px rgba(15, 23, 42, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .step-card:last-child {
@@ -523,11 +530,16 @@ body {
 }
 
 .step-card:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.28);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.88),
+    rgba(255, 255, 255, 0.72)
+  );
+  border-color: rgba(255, 255, 255, 0.7);
   transform: translateX(10px);
-  box-shadow: 0 24px 64px -28px rgba(9, 26, 38, 0.55),
-              0 0 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 24px 64px -28px rgba(9, 26, 38, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .step-card:hover::before {
@@ -562,7 +574,7 @@ body {
 }
 
 .step-title {
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(23, 52, 70, 0.95);
   font-size: 1.25rem;
   font-weight: var(--font-semibold);
   margin-bottom: 1rem;
@@ -570,7 +582,7 @@ body {
 }
 
 .step-description {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(23, 52, 70, 0.75);
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -583,7 +595,7 @@ body {
 }
 
 .step-list li {
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(23, 52, 70, 0.72);
   font-size: 0.9rem;
   padding: 0.5rem 0;
   padding-left: 1.5rem;
@@ -604,12 +616,12 @@ body {
 }
 
 .step-footer {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(23, 52, 70, 0.6);
   font-size: 0.875rem;
   line-height: 1.6;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(23, 52, 70, 0.12);
   font-style: italic;
 }
 
