@@ -1650,10 +1650,20 @@ button:not(.btn-primary),
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100svh;
   }
 
   #hero::before {
     background: none;
+  }
+
+  #hero > .relative {
+    min-height: 100svh;
+  }
+
+  #hero .relative.z-10 {
+    padding-top: 0;
+    padding-bottom: 2rem;
   }
 
   .hero-content {
