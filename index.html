@@ -492,49 +492,50 @@
 
       <section id="contact" class="section-padding section-shell">
         <div class="mx-auto max-w-5xl px-6">
-          <div class="reveal rounded-3xl bg-white p-8 shadow-soft md:p-12">
-            <div class="space-y-3 text-center">
-              <h2 class="section-title text-3xl">Get Started</h2>
-              <p class="text-sm text-brand-dark/70">
-                Tell us a bit about you and we’ll take it from there.
+          <div class="reveal contact-container">
+            <div class="contact-accent"></div>
+            <div class="contact-header">
+              <h2 class="contact-title">Get in touch</h2>
+              <p class="contact-subtitle">
+                Share a few details and we'll be in contact within 24 hours to discuss your needs.
               </p>
             </div>
             <!-- Replace email in action if needed: https://formsubmit.co/your@email.com -->
             <form
               action="https://formsubmit.co/hello@foundersflow.co.uk"
               method="POST"
-              class="mt-8 grid gap-5"
+              class="contact-form"
             >
               <input type="hidden" name="_captcha" value="false" />
-              <div class="grid gap-5 md:grid-cols-2">
-                <label for="contact-name" class="space-y-2 text-sm text-brand-dark/70">
-                  <span>Name *</span>
+              <div class="form-row">
+                <label for="contact-name" class="form-field">
+                  <span class="form-label">Name</span>
                   <input
                     type="text"
                     id="contact-name"
                     name="name"
                     required
                     class="form-input"
-                    placeholder="Your name"
+                    placeholder="Enter your name"
                     aria-required="true"
                   />
                 </label>
-                <label for="contact-email" class="space-y-2 text-sm text-brand-dark/70">
-                  <span>Email *</span>
+                <label for="contact-email" class="form-field">
+                  <span class="form-label">Email</span>
                   <input
                     type="email"
                     id="contact-email"
                     name="email"
                     required
                     class="form-input"
-                    placeholder="your@email.com"
+                    placeholder="your@company.com"
                     aria-required="true"
                   />
                 </label>
               </div>
-              <div class="grid gap-5 md:grid-cols-2">
-                <label for="contact-founder" class="space-y-2 text-sm text-brand-dark/70">
-                  <span>Founder of…</span>
+              <div class="form-row">
+                <label for="contact-founder" class="form-field">
+                  <span class="form-label">Company</span>
                   <input
                     type="text"
                     id="contact-founder"
@@ -543,37 +544,39 @@
                     placeholder="Company name"
                   />
                 </label>
-                <label for="contact-role" class="space-y-2 text-sm text-brand-dark/70">
-                  <span>Role</span>
+                <label for="contact-role" class="form-field">
+                  <span class="form-label">Role</span>
                   <input
                     type="text"
                     id="contact-role"
                     name="occupation"
                     class="form-input"
-                    placeholder="Role or title"
+                    placeholder="Your role or title"
                   />
                 </label>
               </div>
-              <label for="contact-package" class="space-y-2 text-sm text-brand-dark/70">
-                <span>Package</span>
+              <label for="contact-package" class="form-field">
+                <span class="form-label">Package of interest</span>
                 <select id="contact-package" name="package" class="form-input">
+                  <option value="">Select a package</option>
                   <option>Starter</option>
                   <option>Growth</option>
                   <option>Authority</option>
+                  <option>Not sure yet</option>
                 </select>
               </label>
-              <label for="contact-message" class="space-y-2 text-sm text-brand-dark/70">
-                <span>Message</span>
+              <label for="contact-message" class="form-field">
+                <span class="form-label">What are you looking to achieve?</span>
                 <textarea
                   id="contact-message"
                   name="message"
                   rows="5"
                   class="form-input"
-                  placeholder="Tell us about your goals"
+                  placeholder="Share your goals and current content challenges..."
                 ></textarea>
               </label>
-              <button type="submit" class="btn-primary w-full px-6 py-3 text-sm font-semibold">
-                Get Started
+              <button type="submit" class="contact-submit">
+                Submit enquiry
               </button>
             </form>
           </div>
