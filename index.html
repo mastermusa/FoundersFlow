@@ -232,6 +232,7 @@
           </div>
           <div class="mt-16 steps-container">
             <div class="reveal step-card" data-reveal-delay="0">
+              <div class="step-number">01</div>
               <h3 class="step-title">Onboarding & Direction</h3>
               <p class="step-description">
                 We start with a call to understand:
@@ -247,6 +248,7 @@
             </div>
 
             <div class="reveal step-card" data-reveal-delay="100">
+              <div class="step-number">02</div>
               <h3 class="step-title">Voice & Pattern Capture</h3>
               <p class="step-description">
                 We collect existing material such as:
@@ -264,6 +266,7 @@
             </div>
 
             <div class="reveal step-card" data-reveal-delay="200">
+              <div class="step-number">03</div>
               <h3 class="step-title">Ongoing Input</h3>
               <p class="step-description">
                 Clients can send:
@@ -280,6 +283,7 @@
             </div>
 
             <div class="reveal step-card" data-reveal-delay="300">
+              <div class="step-number">04</div>
               <h3 class="step-title">Weekly Delivery</h3>
               <p class="step-description">
                 We draft your content in Google Docs, organised by week.
@@ -503,58 +507,65 @@
             >
               <input type="hidden" name="_captcha" value="false" />
               <div class="grid gap-5 md:grid-cols-2">
-                <label class="space-y-2 text-sm text-brand-dark/70">
+                <label for="contact-name" class="space-y-2 text-sm text-brand-dark/70">
                   <span>Name *</span>
                   <input
                     type="text"
+                    id="contact-name"
                     name="name"
                     required
                     class="form-input"
                     placeholder="Your name"
+                    aria-required="true"
                   />
                 </label>
-                <label class="space-y-2 text-sm text-brand-dark/70">
+                <label for="contact-email" class="space-y-2 text-sm text-brand-dark/70">
                   <span>Email *</span>
                   <input
                     type="email"
+                    id="contact-email"
                     name="email"
                     required
                     class="form-input"
                     placeholder="your@email.com"
+                    aria-required="true"
                   />
                 </label>
               </div>
               <div class="grid gap-5 md:grid-cols-2">
-                <label class="space-y-2 text-sm text-brand-dark/70">
+                <label for="contact-founder" class="space-y-2 text-sm text-brand-dark/70">
                   <span>Founder of…</span>
                   <input
                     type="text"
+                    id="contact-founder"
                     name="founder_of"
                     class="form-input"
                     placeholder="Company name"
                   />
                 </label>
-                <label class="space-y-2 text-sm text-brand-dark/70">
+                <label for="contact-role" class="space-y-2 text-sm text-brand-dark/70">
                   <span>Role</span>
                   <input
                     type="text"
+                    id="contact-role"
                     name="occupation"
                     class="form-input"
                     placeholder="Role or title"
                   />
                 </label>
               </div>
-              <label class="space-y-2 text-sm text-brand-dark/70">
+              <label for="contact-package" class="space-y-2 text-sm text-brand-dark/70">
                 <span>Package</span>
-                <select name="package" class="form-input">
+                <select id="contact-package" name="package" class="form-input">
                   <option>Starter</option>
                   <option>Growth</option>
                   <option>Authority</option>
                 </select>
               </label>
-              <label class="space-y-2 text-sm text-brand-dark/70">
+              <label for="contact-message" class="space-y-2 text-sm text-brand-dark/70">
                 <span>Message</span>
                 <textarea
+                  id="contact-message"
                   name="message"
                   rows="5"
                   class="form-input"

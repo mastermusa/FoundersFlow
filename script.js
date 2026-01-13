@@ -95,12 +95,19 @@ if (contactForm) {
     }
 
     // Update button state
+    const originalText = submitBtn.textContent;
     submitBtn.textContent = "Sending...";
     submitBtn.disabled = true;
     submitBtn.style.opacity = "0.7";
 
-    // FormSubmit will handle the actual submission
-    // The button will be re-enabled on page reload
+    // Re-enable button after timeout in case of network error
+    setTimeout(() => {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = "1";
+    }, 5000);
+
+    // FormSubmit will handle the actual submission and redirect
   });
 }
 
@@ -125,10 +132,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Slow the hero video playback for a calmer feel with seamless loop
+// Slow the hero video playback for a calmer feel
 document.querySelectorAll(".hero-video-media").forEach((video) => {
-  let playbackSpeed = 0.55;
-  let playingForward = true;
+  const playbackSpeed = 0.55;
 
   // Set playback rate immediately to prevent flash of normal speed
   video.playbackRate = playbackSpeed;
@@ -141,19 +147,6 @@ document.querySelectorAll(".hero-video-media").forEach((video) => {
   video.addEventListener("loadedmetadata", setRate);
   video.addEventListener("loadeddata", setRate);
   video.addEventListener("play", setRate);
-
-  // Seamless loop by reversing playback direction
-  video.addEventListener("timeupdate", () => {
-    if (playingForward && video.currentTime >= video.duration - 0.1) {
-      // Near the end, reverse direction
-      playingForward = false;
-      video.playbackRate = -playbackSpeed;
-    } else if (!playingForward && video.currentTime <= 0.1) {
-      // Near the beginning, play forward again
-      playingForward = true;
-      video.playbackRate = playbackSpeed;
-    }
-  });
 
   // Double-check after a brief delay
   setTimeout(setRate, 100);
