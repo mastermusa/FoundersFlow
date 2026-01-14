@@ -1685,27 +1685,6 @@ button:not(.btn-primary),
     );
   }
 
-  /* iOS Safari status bar overlay mask */
-  @supports (padding: env(safe-area-inset-top)) {
-    #hero::after {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: calc(env(safe-area-inset-top) + 20px);
-      background: linear-gradient(
-        to bottom,
-        #0a1721 0%,
-        rgba(10, 23, 33, 0.95) 40%,
-        rgba(10, 23, 33, 0.7) 70%,
-        transparent 100%
-      );
-      z-index: 9999;
-      pointer-events: none;
-    }
-  }
-
   #hero > .relative {
     min-height: auto;
   }
